@@ -1,4 +1,4 @@
-package com.sj.sample.hello.sample_hello;
+package com.sandbox.challenge.cc.core;
 
 import java.util.Scanner;
 
@@ -33,12 +33,12 @@ public class CodesCyphers {
 			char[] cipherArray = new char[msgArray.length];
 			
 			for(int i =0;i<caseArray.length;i++)
-    		{
-    			if(((int)caseArray[i])>64 && ((int)caseArray[i])< 91)
     			{
-    				caseCode[i]=1;
+    				if(((int)caseArray[i])>64 && ((int)caseArray[i])< 91)
+    				{
+    					caseCode[i]=1;
+    				}
     			}
-    		}
 			
 			for(int i=0;i<msgArray.length;i++)
 			{
@@ -104,12 +104,12 @@ public class CodesCyphers {
 			char[] decipherArray = new char[cipherArray.length];
 			
 			for(int i =0;i<caseArray.length;i++)
-    		{
-    			if(((int)caseArray[i])>64 && ((int)caseArray[i])< 91)
     			{
-    				caseCode[i]=1;
+    				if(((int)caseArray[i])>64 && ((int)caseArray[i])< 91)
+    				{
+    					caseCode[i]=1;
+    				}
     			}
-    		}
 			
 			for(int i=0;i<cipherArray.length;i++)
 			{
